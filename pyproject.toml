@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "song_lyrics_generator"
+version = "0.1.0"
+description = "scrape api.genius.com to build a dataset of your favourite artists and train gpt-2 on it using aitextgen"
+authors = ["cozyDoomer <chr.unterrainer@gmail.com>"]
+license = "GPL-3"
+
+[tool.poetry.dependencies]
+python = "3.9"
+beautifulsoup4 = "4.10.0"
+aitextgen = "0.5.2"
+
+[tool.poetry.dev-dependencies]
+jupyter = "1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
