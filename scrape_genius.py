@@ -65,7 +65,10 @@ def scrape_song_lyrics(url: str):
     """
     page = requests.get(url)
     html = BeautifulSoup(page.text, 'html.parser')
-    lyrics = html.find('div', id='lyrics-root').get_text(separator='|', strip=True)
+    lyrics_div = html.find('div', id='lyrics-root')
+    if lyrics_div is None:
+        return None
+    lyrics = lyrics_div.get_text(separator='|', strip=True)
     return lyrics
 
 
