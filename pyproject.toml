@@ -6,12 +6,12 @@ authors = ["cozyDoomer <chr.unterrainer@gmail.com>"]
 license = "GPL-3"
 
 [tool.poetry.dependencies]
-python = "3.9"
-beautifulsoup4 = "4.10.0"
-aitextgen = "0.5.2"
+python = "^3.9"
+beautifulsoup4 = "^4.10.0"
+aitextgen = "^0.5.2"
 
-[tool.poetry.dev-dependencies]
-jupyter = "1.0.0"
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
